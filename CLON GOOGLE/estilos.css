@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    width: 100%;
+    height: 60px;
+
+}
+/*To access inside of specific part in the html, first you have to put the "label"
+for example, first you put the header label, then to access in a class inside the label
+just call in the same line putting a "point" before the class name, and to access in a
+target inside the */
+
+header nav {
+    display: flex; /*this propiety function such container and make it flexible 
+    with that, we can change the objects position in that container*/
+    justify-content: flex-end; /*this code line moves the text with the photo user
+    to the last (in the right part) of row*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;/*we activate this function to make changes in the text
+    position, so it makes the format in a "flexible" way to move the objects*/
+    list-style: none;/*this function quit the dotted format in list, 
+    with this, we can make the google header format in its principal page*/
+    justify-content: center;/*this line code, make the content stay at 
+    the center of the page in the vertical format*/
+    align-items: center; 
+
+}
+
+nav .nav-right-section a{/*this type of code format access first to the object named 
+    as ".nav-right-section" and then acces to the "a" labels inside objects with that
+    class*/
+    text-decoration: none; /*this code line quits the lined format in the text*/
+    margin-right: 25px; /*this code line separate the texts making a small margin 
+    between the objects*/
+    color: black; /*this code line quits the purple lined format of hyperlinks*/
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+    width: 30px;/*this code line modifies the image size*/
+    background-size: contain;/*this code line make the image of "menu" part 
+    occupies all the part of ".menu-icon", so it makes the image finish fixed in this little 
+    square part */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav.nav-right-section .menu-icon:hover{
+    border-radius: 9px solid;
+    box-shadow: #5f6368;
+    text-emphasis:inherit;
+    text-decoration:line-through;
+}
+
+nav .nav-right-section img{
+    border-radius: 80px;/*this section make the image as a circle, just adding radius in the border 
+    of the image*/
+    margin-left: 15px; /*make the image smaller than the original one and a margin between the left side of */
+    width: 35px; /*this adjust the image width*/
+    height: 35px; /*this function adjust the image height*/
+
+}
+
+main{
+    margin-top: 30px; /*this separate the "google" icon 30 px to aparted to the header*/
+    text-align: center;/*this function center the content in the main section*/
+}
+
+main .main-logo{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none; /*this part have the function to make that the input square doesn't mark in a darker
+    way*/
+
+
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;/*it is like clock hands, to add the sahdows, the firts one'll be in the 12 o'clock, the next at 3 o'clock
+    the next one will be at 6 o'clock and the last one'll at 9 o'clock*/
+}
+
+main .main-input .search-icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    width: 28px;
+    height: 18px;
+    padding-left: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: left;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+main .main-input .cam-icon{
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE');
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    padding-right: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+    
+}
+
+main .main-buttons div{
+    display: inline-block; /*it  colocates the buttons in horizontal line, doing that they be one by one side*/
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 6px;
+    margin-right: 12px;
+    
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.5px 1px 0 #000001;
+    cursor: pointer;
+
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 15px;
+    border-top: 1px solid #e4e4e4; /*line who divides the gray line to the white one*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
