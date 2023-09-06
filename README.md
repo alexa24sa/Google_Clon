@@ -1,5 +1,5 @@
 <!--Principal title-->
-# Google_Clon/ Clonación de la interfaz de google con HTML5 y CSS3/ Making a google clon using HTLM5 y CSS3
+# Google_Clon/ Clonación de la interfaz de google con HTML5 y CSS3/ Making a google clon using HTLM5 and CSS3
 <!--Second Section-->
 ## **ÍNDICE/INDEX**
 1. [Introducción](#)
